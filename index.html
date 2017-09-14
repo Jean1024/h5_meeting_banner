@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>中国科协青年科学家论坛</title>
+  <link rel="stylesheet" href="lib/animate.min.css">
+  <link rel="stylesheet" href="lib/swiper-3.4.2.min.css">
+  <link rel="stylesheet" href="css/index.css?914">
+  <script>
+  /******设置根元素字体大小*******/
+  !function(win,doc){
+      var d=doc.documentElement;
+      function change(){
+          var fz = d.clientWidth/25
+          fz = fz>30?30:fz;
+          d.style.fontSize= fz+'px';
+      }
+      win.addEventListener('resize',change,false);
+      change();
+  }(window,document);
+</script>
 </head>
 <body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quae incidunt cum saepe alias earum nisi aliquam. Quae saepe delectus accusantium! Iure, rem corporis ab natus iusto eveniet incidunt ipsam!
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!-- 第一屏 -->
+        <div class="swiper-slide">
+          <div class="content once">
+            <img src="imgs/1/circle.png" alt="" class="circle once">
+            <img src="imgs/1/中国科协青年科学家论坛.png" alt="" class="luntan once">
+            <img src="imgs/1/雾霾 、天气与气候 拷贝 2.png" alt="" class="wumai once">
+            <img src="imgs/1/邀请函.png" alt="" class="yaoqing once">
+          </div>
+        </div>
+    </div>
+</div>
+    <audio src="./mp3/bg.mp3" autoplay loop id="mp3">
+    Your browser does not support the audio tag.
+    </audio>
+    <script src="lib/jquery-1.10.1.min.js"></script>
+    <script src="lib/swiper-3.4.2.jquery.min.js"></script>  
+    <script src="js/index.js?1638"></script>
 </body>
 </html>
