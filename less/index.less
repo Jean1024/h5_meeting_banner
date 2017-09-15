@@ -31,13 +31,16 @@ body {
         width: 10%;
         height: 10%;
         position: absolute;
-        top: 1rem;
-        right: 1rem;
+        top: 0.6rem;
+        right: 0.6rem;
         z-index: 200;
         img {
             width: 100%;
         }
     } 
+    .swiper-slide{
+        overflow:hidden;
+    }
     // 第一屏
     .swiper1{
       .content{
@@ -166,10 +169,15 @@ body {
       .content{
         position: relative;
         .anpai{
+          -webkit-animation-duration: 1s;
+          -webkit-animation-delay: 0s;
           .richeng{
             margin-top: 1.3rem;
             float: left;
             width: 4.53125rem;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-delay: 0.5s;
+
           }
           .circle{
             position: absolute;
@@ -203,18 +211,26 @@ body {
           .item1{
             top: 3.375rem;
             left: 2.6rem;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-delay: 1s;
           }
           .item2{
             top: 8.375rem;
             left: 5.3rem;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-delay: 1.5s;
           }
           .item3{
             top: 13.375rem;
             left: 5.46rem;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-delay: 2s;
           }
           .item4{
             top: 17.375rem;
             left: 4rem;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-delay: 2.5s;
           }
         }
       }
@@ -228,27 +244,64 @@ body {
             width: 8.125rem;
             margin-bottom: 0.625rem;
             margin-left: 0.625rem;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-delay: 0s;
           }
           .person{
+          -webkit-animation-duration: 1s;
             width: 19.375rem;
             margin-left: 0.625rem;
             margin-top:-0.2rem;
+          }
+          .person:nth-child(1){
+          -webkit-animation-delay: 0s;
+          }
+          .person:nth-child(2){
+          -webkit-animation-delay: 0.3s;
+          }
+          .person:nth-child(3){
+          -webkit-animation-delay: 0.6s;
+          }
+          .person:nth-child(4){
+          -webkit-animation-delay: 0.9s;
+          }
+          .person:nth-child(5){
+          -webkit-animation-delay: 1.2s;
+          }
+          .person:nth-child(6){
+          -webkit-animation-delay: 1.5s;
           }
         }
     }
     // 第五屏
     .swiper5 {
         height: 100%;
+        position: relative;
         .item1 {
             .title {
                 width: 7.5rem;
                 margin-left: 0.625rem;
                 margin-top: 5rem;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-delay: 0s;
             }
             .sub {
                 width: 90%;
                 margin-top: 2rem;
                 margin-left: 0.625rem;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-delay: 1s;
+            }
+            ul{
+                position: absolute;
+                height: 10rem;
+                width: 100%;
+                top: 9rem;
+                li{
+                    list-style: none;
+                    height: 0.9375rem;
+                    margin-bottom: 1.8rem;
+                }
             }
         }
     }
@@ -257,14 +310,20 @@ body {
             .title {
                 width: 100%;
                 margin-top: 5rem;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-delay: 0s;
             }
             .man1 {
                 width: 17.34375rem;
                 margin-left: 2.8125rem;
                 margin-top: 2.1875rem;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-delay: 0.8s;
             }
             .man2 {
                 width: 17.34375rem;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-delay: 1.6s;
             }
         }
 
@@ -276,16 +335,23 @@ body {
                 margin-left: -0.09375rem;
                 margin-top: 0rem;
             }
+            .bottom{
+
+            }
             .text {
                 margin-top: 2rem;
                 width: 18.75rem;
                 margin-left: 0.625rem;
+          -webkit-animation-duration: 1.5s;
+          -webkit-animation-delay: 0.6s;
             }
             .pic {
                 position: absolute;
                 top: 6.48rem;
                 left: 4.84rem;
                 width: 10.46875rem;
+          -webkit-animation-duration: 1.5s;
+          -webkit-animation-delay: 0.6s;
             }
         }
 
@@ -303,6 +369,8 @@ body {
                 margin-bottom: 0.625rem;
             }
             .sub {
+          -webkit-animation-duration: 1s;
+          -webkit-animation-delay: 0.6s;
                 .sub_title {
                     margin-top: 0.32rem;
                     vertical-align: top;
@@ -340,6 +408,14 @@ body {
                     text-indent: 1.6rem;
                     line-height: 1.125rem;
                 }
+                .p1{
+                  -webkit-animation-duration: 1s;
+                  -webkit-animation-delay: 0.4s;
+                }
+                .p2{
+                  -webkit-animation-duration: 1s;
+                  -webkit-animation-delay: 0.8s;
+                }
                 ul{
                     margin-top: 0.4rem;
                     li{
@@ -366,13 +442,52 @@ body {
                         -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
                         -o-transform:rotate(45deg);  /* Opera */
                     }
+                    .li1{
+                  -webkit-animation-duration: 1s;
+                  -webkit-animation-delay: 1.2s;
+                    }
+                    .li2{
+                  -webkit-animation-duration: 1s;
+                  -webkit-animation-delay: 1.6s;
+                    }
+                    .li3{
+                  -webkit-animation-duration: 1s;
+                  -webkit-animation-delay: 2s;
+                    }
+                    .li4{
+                  -webkit-animation-duration: 1s;
+                  -webkit-animation-delay: 2.4s;
+                    }
                 }
                 .QRcode{
                     width: 5.3125rem;
                     margin-top: 2.4rem;
                     margin-left: 1.4rem;
+                  -webkit-animation-duration: 1s;
+                  -webkit-animation-delay: 3.5s;
                 }
             }
         }
     }
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+.animateRotating60 {
+    -webkit-animation: rotating 60s linear infinite;
+}
+.animateRotating {
+    -webkit-animation: rotating 5s linear infinite;
+}
+.swiper-pagination-bullet{
+    background-color: rgba(255,255,255,.6)!important;
+}
+.swiper-pagination-bullet-active{
+    background-color: #fff!important;
 }

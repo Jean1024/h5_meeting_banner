@@ -29,12 +29,15 @@ body {
   width: 10%;
   height: 10%;
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.6rem;
+  right: 0.6rem;
   z-index: 200;
 }
 .swiper-container .music img {
   width: 100%;
+}
+.swiper-container .swiper-slide {
+  overflow: hidden;
 }
 .swiper-container .swiper1 .content {
   padding-top: 2rem;
@@ -152,10 +155,16 @@ body {
 .swiper-container .swiper3 .content {
   position: relative;
 }
+.swiper-container .swiper3 .content .anpai {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+}
 .swiper-container .swiper3 .content .anpai .richeng {
   margin-top: 1.3rem;
   float: left;
   width: 4.53125rem;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
 }
 .swiper-container .swiper3 .content .anpai .circle {
   position: absolute;
@@ -187,18 +196,26 @@ body {
 .swiper-container .swiper3 .content .main .item1 {
   top: 3.375rem;
   left: 2.6rem;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
 }
 .swiper-container .swiper3 .content .main .item2 {
   top: 8.375rem;
   left: 5.3rem;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
 }
 .swiper-container .swiper3 .content .main .item3 {
   top: 13.375rem;
   left: 5.46rem;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
 }
 .swiper-container .swiper3 .content .main .item4 {
   top: 17.375rem;
   left: 4rem;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2.5s;
 }
 .swiper-container .swiper4 {
   background: url('../imgs/4-特邀报告/背景.jpg') no-repeat center / cover;
@@ -208,36 +225,79 @@ body {
   width: 8.125rem;
   margin-bottom: 0.625rem;
   margin-left: 0.625rem;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0s;
 }
 .swiper-container .swiper4 .content .person {
+  -webkit-animation-duration: 1s;
   width: 19.375rem;
   margin-left: 0.625rem;
   margin-top: -0.2rem;
 }
+.swiper-container .swiper4 .content .person:nth-child(1) {
+  -webkit-animation-delay: 0s;
+}
+.swiper-container .swiper4 .content .person:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+}
+.swiper-container .swiper4 .content .person:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+}
+.swiper-container .swiper4 .content .person:nth-child(4) {
+  -webkit-animation-delay: 0.9s;
+}
+.swiper-container .swiper4 .content .person:nth-child(5) {
+  -webkit-animation-delay: 1.2s;
+}
+.swiper-container .swiper4 .content .person:nth-child(6) {
+  -webkit-animation-delay: 1.5s;
+}
 .swiper-container .swiper5 {
   height: 100%;
+  position: relative;
 }
 .swiper-container .swiper5 .item1 .title {
   width: 7.5rem;
   margin-left: 0.625rem;
   margin-top: 5rem;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0s;
 }
 .swiper-container .swiper5 .item1 .sub {
   width: 90%;
   margin-top: 2rem;
   margin-left: 0.625rem;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+}
+.swiper-container .swiper5 .item1 ul {
+  position: absolute;
+  height: 10rem;
+  width: 100%;
+  top: 9rem;
+}
+.swiper-container .swiper5 .item1 ul li {
+  list-style: none;
+  height: 0.9375rem;
+  margin-bottom: 1.8rem;
 }
 .swiper-container .swiper6 .item2 .title {
   width: 100%;
   margin-top: 5rem;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0s;
 }
 .swiper-container .swiper6 .item2 .man1 {
   width: 17.34375rem;
   margin-left: 2.8125rem;
   margin-top: 2.1875rem;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.8s;
 }
 .swiper-container .swiper6 .item2 .man2 {
   width: 17.34375rem;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.6s;
 }
 .swiper-container .swiper7 .item3 .title {
   width: 100%;
@@ -248,12 +308,16 @@ body {
   margin-top: 2rem;
   width: 18.75rem;
   margin-left: 0.625rem;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 0.6s;
 }
 .swiper-container .swiper7 .item3 .pic {
   position: absolute;
   top: 6.48rem;
   left: 4.84rem;
   width: 10.46875rem;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 0.6s;
 }
 .swiper-container .swiper8 .item4,
 .swiper-container .swiper9 .item4,
@@ -281,6 +345,15 @@ body {
   width: 13.3125rem;
   margin-left: 4.125rem;
   margin-bottom: 0.625rem;
+}
+.swiper-container .swiper8 .item4 .sub,
+.swiper-container .swiper9 .item4 .sub,
+.swiper-container .swiper10 .item4 .sub,
+.swiper-container .swiper8 .item5 .sub,
+.swiper-container .swiper9 .item5 .sub,
+.swiper-container .swiper10 .item5 .sub {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.6s;
 }
 .swiper-container .swiper8 .item4 .sub .sub_title,
 .swiper-container .swiper9 .item4 .sub .sub_title,
@@ -337,6 +410,14 @@ body {
   text-indent: 1.6rem;
   line-height: 1.125rem;
 }
+.swiper-container .swiper11 .content .info .p1 {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.4s;
+}
+.swiper-container .swiper11 .content .info .p2 {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.8s;
+}
 .swiper-container .swiper11 .content .info ul {
   margin-top: 0.4rem;
 }
@@ -368,8 +449,46 @@ body {
   -o-transform: rotate(45deg);
   /* Opera */
 }
+.swiper-container .swiper11 .content .info ul .li1 {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.2s;
+}
+.swiper-container .swiper11 .content .info ul .li2 {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.6s;
+}
+.swiper-container .swiper11 .content .info ul .li3 {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+}
+.swiper-container .swiper11 .content .info ul .li4 {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2.4s;
+}
 .swiper-container .swiper11 .content .info .QRcode {
   width: 5.3125rem;
   margin-top: 2.4rem;
   margin-left: 1.4rem;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 3.5s;
+}
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.animateRotating60 {
+  -webkit-animation: rotating 60s linear infinite;
+}
+.animateRotating {
+  -webkit-animation: rotating 5s linear infinite;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #fff!important;
 }

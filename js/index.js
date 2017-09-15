@@ -63,5 +63,9 @@ $(function () {
         $('#mp3').get(0).play()
       }
     })  
+    $('#turnTo li').click(function () {
+      var index = $(this).index()
+      mySwiper.slideTo((+index + 5), 1000, true);
+    })
   })
   
