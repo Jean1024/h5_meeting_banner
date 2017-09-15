@@ -39,7 +39,7 @@ body {
         }
     } 
     .swiper-slide{
-        overflow:hidden;
+        // overflow:hidden;
     }
     // 第一屏
     .swiper1{
@@ -47,14 +47,14 @@ body {
         padding-top: 2rem;
         .logo{
           text-align: center;
-          -webkit-animation-duration: 1s;
+          -webkit-animation-duration: 3s;
           -webkit-animation-delay: 0.3s;
           img{
             width: 5.0rem;
           }
           p{
             margin-top: 0.3125rem   1;
-            font-size: 1rem;
+            font-size: 0.8rem;
           }
         }
         .img_content{
@@ -64,19 +64,23 @@ body {
         .luntan{
           width: 100%;
           margin-top: 0.9375rem;
-          -webkit-animation-duration: 1s;
+          -webkit-animation-duration: 1.5s;
           -webkit-animation-delay: 1.2s;
         }
         .bottom{
-          -webkit-animation-duration: 1s;
-          -webkit-animation-delay: 2s;
+          opacity: 0;
+          -webkit-animation: rotating1 1s 2.5s both;
+          // -webkit-animation-duration: 1s;
+          // -webkit-animation-delay: 2s;
           img{
             width: 100%;
-            margin-top: 1.5625rem;
-            margin-bottom: 0.625rem;
+            margin-top: 1.2rem;
+            margin-bottom: 0.4rem;
           }
           p{
             text-align: center;
+            font-size: 0.8rem;
+            line-height: 0.9rem;
           }
         }
       }
@@ -100,6 +104,9 @@ body {
             /* Opera 9.5 */
             background-size: cover;
             padding-top: 1.4375rem;
+
+          -webkit-animation-duration: 2s;
+          -webkit-animation-delay: 0s;
             .item{
               p{
                 line-height: 1.5625rem;
@@ -180,6 +187,7 @@ body {
 
           }
           .circle{
+            opacity: 1;
             position: absolute;
             top: 0;
             left: -19.5rem;
@@ -237,7 +245,8 @@ body {
     }
     // 第四屏
     .swiper4{
-        background: url('../imgs/4-特邀报告/背景.jpg') no-repeat center/cover;
+        //background: url('../imgs/4-特邀报告/背景.jpg') no-repeat center/cover;
+        width: 20rem;
         .content{
           .title{
             margin-top: 1rem;
@@ -248,7 +257,7 @@ body {
           -webkit-animation-delay: 0s;
           }
           .person{
-          -webkit-animation-duration: 1s;
+          -webkit-animation-duration: 2s;
             width: 19.375rem;
             margin-left: 0.625rem;
             margin-top:-0.2rem;
@@ -277,6 +286,7 @@ body {
     .swiper5 {
         height: 100%;
         position: relative;
+        z-index: 220;
         .item1 {
             .title {
                 width: 7.5rem;
@@ -342,7 +352,7 @@ body {
                 margin-top: 2rem;
                 width: 18.75rem;
                 margin-left: 0.625rem;
-          -webkit-animation-duration: 1.5s;
+          -webkit-animation-duration: 2.5s;
           -webkit-animation-delay: 0.6s;
             }
             .pic {
@@ -357,20 +367,22 @@ body {
 
     }
     .swiper8,.swiper9,.swiper10{
-      .item4,.item5{
-            font-size: 0.7rem;
             .title {
                 width: 100%;
                 margin-left: -0.09375rem;
             }
+      .item4,.item5{
+            font-size: 0.74rem;
             .divice {
                 width: 13.3125rem;
+                opacity:0.4;
                 margin-left: 4.125rem;
+                margin-top: 0.46rem;
                 margin-bottom: 0.625rem;
             }
             .sub {
           -webkit-animation-duration: 1s;
-          -webkit-animation-delay: 0.6s;
+          -webkit-animation-delay: 0s;
                 .sub_title {
                     margin-top: 0.32rem;
                     vertical-align: top;
@@ -381,31 +393,33 @@ body {
                     display: inline-block;
                     width: 15.3rem;
                     p {
-                        line-height: 1.0rem;
-                        margin-bottom: 0.625rem;
+                        line-height: 1.1rem;
+                        margin-bottom: 0.3rem;
                     }
                 }
                 .sub1 {
-                    margin-top: 2rem;
+                    margin-top: 0rem;
                 }
             }
         }
     }
     .swiper11{
         .content{
-            color: #282828;
+            color: rgba(0,0,0,.9);
             font-size: 0.8rem;
             height: 100%;
             background: url('../imgs/6 会议概况/标题＋背景.png') no-repeat center/98%;
+            background-position: 50% 6%;
             .info{
                 width: 15.625rem;
                 height: 21.875rem;
                 position: absolute;
-                top:56%;
+                top:18.5rem;
                 left: 50%;
                 transform: translate(-50%,-50%);
                 p{
                     text-indent: 1.6rem;
+                    text-align: justify;
                     line-height: 1.125rem;
                 }
                 .p1{
@@ -479,15 +493,31 @@ body {
         transform: rotate(1turn);
     }
 }
+@keyframes rotating1 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(1turn);
+        opacity: 1;
+    }
+}
 .animateRotating60 {
     -webkit-animation: rotating 60s linear infinite;
 }
 .animateRotating {
     -webkit-animation: rotating 5s linear infinite;
 }
-.swiper-pagination-bullet{
-    background-color: rgba(255,255,255,.6)!important;
+.swiper-container .swiper-pagination-bullet{
+    background: rgba(0,0,0,1);
+    opacity: 0.6;
 }
-.swiper-pagination-bullet-active{
-    background-color: #fff!important;
+.swiper-container  .swiper-pagination-bullet-active{
+    background: rgba(255,255,255,1);
+    opacity: 1;
+}
+.swiper-pagination.swiper-pagination-bullets{
+    top: 21rem!important;
+
 }

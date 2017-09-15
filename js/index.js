@@ -15,6 +15,11 @@ $(function () {
             var index = mySwiper.activeIndex
             cacheQuery = $(mySwiper.slides[index]).find('.once')
             cacheQuery.hide()
+            if (index === 4) {
+              $('.swiper4 .person:eq(4)').hide()
+            }else{
+              $('.swiper4 .person:eq(4)').show()
+            }
         },
         onSlideChangeEnd: function (mySwiper) {
             // var scrollTop = $("#child").scrollTop()
