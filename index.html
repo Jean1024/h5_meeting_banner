@@ -7,7 +7,7 @@
     <title>第34届中国气象学会年会</title>
     <link rel="stylesheet" href="lib/animate.min.css">
     <link rel="stylesheet" href="lib/swiper-3.4.2.min.css">
-    <link rel="stylesheet" href="css/index.css?914">
+    <link rel="stylesheet" href="css/index.css?918">
     <script>
     ! function(win, doc) {
         var d = doc.documentElement;
@@ -35,7 +35,7 @@
                         <p>参与 • 共享 • 合作 • 创新</p>
                     </div>
                     <div class="img_content once fadeIn animated">
-                      <img src="imgs/1.首页/内容.png" alt="" class="luntan once  animated swing">
+                        <img src="imgs/1.首页/内容.png" alt="" class="luntan once  animated swing">
                     </div>
                     <div class="bottom once">
                         <img src="imgs/1.首页/主题.png" alt="" class="wumai once">
@@ -70,7 +70,7 @@
                             <p>副主席:</p>
                             <p>宇如聪　费建芳　钱泽宏　端义宏
                                 <br>杨修群　胡永云　李廉水　翟盘茂
-                                <br>赵国强</p>
+                                <br>王金星　赵国强</p>
                         </div>
                     </div>
                 </div>
@@ -123,11 +123,11 @@
                     <img src="imgs/5-2017年度奖励介绍/2017年度奖励介绍 列表/标题.png" alt="" class="title once animated bounceInLeft">
                     <img src="imgs/5-2017年度奖励介绍/2017年度奖励介绍 列表/内容.png" alt="" class="sub once animated rotateInUpLeft">
                     <ul id="turnTo">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>
@@ -144,8 +144,8 @@
                 <div class="content item3">
                     <img src="imgs/5-2017年度奖励介绍/5.2第十七届涂长望青年气象科技奖/标题.png" alt="" class="title once animated rotateInDownLeft">
                     <div class="bottom">
-                      <img src="imgs/5-2017年度奖励介绍/5.2第十七届涂长望青年气象科技奖/照片.png" alt="" class="pic once animated zoomInLeft">
-                    <img src="imgs/5-2017年度奖励介绍/5.2第十七届涂长望青年气象科技奖/文字介绍.png" alt="" class="text once animated zoomInRight">
+                        <img src="imgs/5-2017年度奖励介绍/5.2第十七届涂长望青年气象科技奖/照片.png" alt="" class="pic once animated zoomInLeft">
+                        <img src="imgs/5-2017年度奖励介绍/5.2第十七届涂长望青年气象科技奖/文字介绍.png" alt="" class="text once animated zoomInRight">
                     </div>
                 </div>
             </div>
@@ -194,7 +194,6 @@
             </div>
             <!-- 第5-4屏 5-4-1 --- 5-4-2  -->
             <div class="swiper-slide swiper9">
-
                 <img src="imgs/5-2017年度奖励介绍/5.42017年度气象科学技术进步成果奖/标题.png" alt="" class="title animated once rotateInDownLeft">
                 <div class="swiper-container container2">
                     <div class="swiper-wrapper">
@@ -282,7 +281,7 @@
             </div>
             <!-- 第5-5屏 5-5-1 --- 5-5-4  -->
             <div class="swiper-slide swiper10">
-                            <img src="imgs/5-2017年度奖励介绍/5.52017年度气象科学技术进步成果奖/标题.png" alt="" class="title animated once rotateInDownLeft">
+                <img src="imgs/5-2017年度奖励介绍/5.52017年度气象科学技术进步成果奖/标题.png" alt="" class="title animated once rotateInDownLeft">
                 <div class="swiper-container container2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide item4">
@@ -440,21 +439,37 @@
                             <li class="li3 once animated fadeInDownBig">通过审核的论文(摘要)数量2114篇</li>
                             <li class="li4 once animated fadeInDownBig">交流具体安排请关注年会网站
                                 <br><a href="http://www.cms1924.org">http://www.cms1924.org</a>
-                                <br>或祥见会议指南</li>
+                                <br>或详见会议指南</li>
                         </ul>
-                        <img src="imgs/6 会议概况/二维码.jpg" alt="" class="QRcode once animated fadeInDown">
+                        <div class="qr">
+                            <div class="item once animated fadeInDown">
+                                <img src="imgs/6 会议概况/二维码.jpg" alt="" class="QRcode">
+                                <p>会议指南</p>
+                            </div>
+                            <div class="item once animated fadeInDown">
+                                <img src="imgs/6 会议概况/二维码2.jpg" alt="" class="QRcode2">
+                                <p>34届年会会议服务号</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <audio src="./imgs/bg.mp3" autoplay loop id="mp3">
+    <audio src="./imgs/bg.mp3" preload="preload" autoplay loop id="mp3">
         Your browser does not support the audio tag.
     </audio>
     <script src="lib/jquery-1.10.1.min.js"></script>
     <script src="lib/swiper-3.4.2.jquery.min.js"></script>
-    <script src="js/index.js"></script><script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
     <script type="text/javascript">
+    //一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以
+    document.getElementById('mp3').play();
+    //必须在微信Weixin JSAPI的WeixinJSBridgeReady才能生效
+    document.addEventListener("WeixinJSBridgeReady", function() {
+        document.getElementById('mp3').play();
+    }, false);
     var url = encodeURIComponent(window.location.href);
     $.ajax({
         type: "post",

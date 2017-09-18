@@ -144,7 +144,7 @@ body {
 }
 .swiper-container .swiper3 {
   height: 20rem;
-  background: url('../imgs/3-日程安排/背景.jpg') no-repeat center bottom;
+  background: url('../imgs/3-日程安排/背景1.jpg') no-repeat center bottom;
   -webkit-background-size: cover;
   /* Safari 3.0 */
   -moz-background-size: cover;
@@ -469,12 +469,23 @@ body {
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 2.4s;
 }
-.swiper-container .swiper11 .content .info .QRcode {
-  width: 5.3125rem;
+.swiper-container .swiper11 .content .info .qr {
   margin-top: 2.4rem;
-  margin-left: 1.4rem;
+}
+.swiper-container .swiper11 .content .info .qr .item {
+  float: left;
+  width: 50%;
+  text-align: center;
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 3.5s;
+}
+.swiper-container .swiper11 .content .info .qr .item img {
+  width: 4.5rem;
+}
+.swiper-container .swiper11 .content .info .qr .item p {
+  text-align: center;
+  text-indent: 0;
+  font-size: 0.6rem;
 }
 @keyframes rotating {
   0% {
